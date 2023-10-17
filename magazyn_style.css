@@ -1,0 +1,455 @@
+body
+{
+	margin:0;
+	background-image:url("qw.png");
+}
+#kontener
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+.grafika_napoju
+{
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	float:left;
+}
+.input:hover
+{
+	cursor:pointer;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+#uzupełnij_guzik:hover
+{
+	cursor:pointer;
+	color:white;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+#guzik:hover
+{
+	transition:400ms;
+	cursor:pointer;
+	color:white;
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+@media (min-width: 1200px)
+{
+	#kontener
+	{
+		width:1200px;
+		height:800px;
+		margin-top:30px;
+	}
+	.szachownica
+	{
+		width:400px;
+		height:400px;
+		float:left;
+	}
+	.grafika_napoju
+	{
+		width:120px;
+		height:220px;
+		margin-top:80px;
+		margin-bottom:80px;
+		border-radius:15px;
+	}
+	img
+	{
+		border-radius:15px;
+	}
+	.stan_produktu
+	{
+		float:right;
+		width:200px;
+		height:60px;
+		margin-right:40px;
+		background-image:url("tlo1.png");
+		margin-top:80px;
+		color:#dddddd;
+		line-height:80px;
+		font-size:25px;
+		border-radius:10px;
+	}
+	.input
+	{
+		float:right;
+		width:200px;
+		height:60px;
+		margin-right:40px;
+		border-radius:10px;
+		font-size:25px;
+		margin-top:20px;
+		border:solid black 2px;
+		transition:300ms;
+	}
+	.input:first-child
+	{
+		margin-top:30px;
+	}
+	#uzupełnij_guzik
+	{
+		float:right;
+		width:200px;
+		height:60px;
+		border-radius:10px;
+		font-size:25px;
+		border:solid black 2px;
+		transition:300ms;
+		margin-top:20px;
+		color:#dddddd;
+		margin-right:40px;
+		background-image:url("tlo1.png");
+	}
+	#uzupełnij_guzik:hover
+	{
+		letter-spacing:7px;
+	}
+	#guzik
+	{
+		margin-left:100px;
+		margin-right:100px;
+		width:200px;
+		height:100px;
+		margin-top:150px;
+		border-radius:10px;
+		font-size:25px;
+		border:solid black 2px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		transition:400ms;
+	}
+	#guzik:hover
+	{
+		letter-spacing:7px;
+	}
+	#test
+	{
+		width:500px;
+		height:200px;
+		position:absolute;
+		top:0;
+		left:200px;
+		background:red;
+		display:none;
+	}
+}
+@media (max-width: 1200px) and (min-width: 1000px)
+{
+	#kontener
+	{
+		width:900px;
+		height:600px;
+		margin-top:30px;
+	}
+	.szachownica
+	{
+		width:300px;
+		height:300px;
+		float:left;
+	}
+	.grafika_napoju
+	{
+		width:100px;
+		height:200px;
+		margin-top:50px;
+		margin-bottom:50px;
+		border-radius:15px;
+	}
+	img
+	{
+		border-radius:15px;
+	}
+	.stan_produktu
+	{
+		border:solid black 2px;
+		float:right;
+		width:150px;
+		height:50px;
+		margin-right:25px;
+		background-image:url("tlo1.png");
+		margin-top:50px;
+		color:#dddddd;
+		line-height:80px;
+		font-size:25px;
+		border-radius:10px;
+	}
+	.input
+	{
+		float:right;
+		width:150px;
+		height:50px;
+		margin-right:25px;
+		border-radius:10px;
+		font-size:20px;
+		margin-top:20px;
+		border:solid black 2px;
+		transition:400ms;
+	}
+	.input:first-child
+	{
+		margin-top:30px;
+	}
+	#uzupełnij_guzik
+	{
+		float:right;
+		width:150px;
+		height:50px;
+		border-radius:10px;
+		font-size:20px;
+		border:solid black 2px;
+		transition:400ms;
+		margin-top:25px;
+		color:#dddddd;
+		margin-right:25px;
+		background-image:url("tlo1.png");
+	}
+	#uzupełnij_guzik:hover
+	{
+		letter-spacing:5px;
+	}
+	#guzik
+	{
+		margin-left:50px;
+		margin-right:50px;
+		width:200px;
+		height:100px;
+		margin-top:100px;
+		border-radius:10px;
+		font-size:25px;
+		border:solid black 2px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		transition:400ms;
+	}
+	#guzik:hover
+	{
+		letter-spacing:7px;
+	}
+	#test
+	{
+		width:500px;
+		height:200px;
+		position:absolute;
+		top:0;
+		left:200px;
+		background:red;
+		display:none;
+	}
+}
+@media (max-width: 1000px) and (min-width: 700px)
+{
+	#kontener
+	{
+		width:600px;
+		height:900px;
+		margin-top:30px;
+	}
+	.szachownica
+	{
+		width:300px;
+		height:300px;
+		float:left;
+	}
+	.grafika_napoju
+	{
+		width:100px;
+		height:200px;
+		margin-top:50px;
+		margin-bottom:50px;
+		border-radius:15px;
+	}
+	img
+	{
+		border-radius:15px;
+	}
+	.stan_produktu
+	{
+		border:solid black 2px;
+		float:right;
+		width:150px;
+		height:50px;
+		margin-right:25px;
+		background-image:url("tlo1.png");
+		margin-top:50px;
+		color:#dddddd;
+		line-height:80px;
+		font-size:25px;
+		border-radius:10px;
+	}
+	.input
+	{
+		float:right;
+		width:150px;
+		height:50px;
+		margin-right:25px;
+		border-radius:10px;
+		font-size:20px;
+		margin-top:20px;
+		border:solid black 2px;
+		transition:300ms;
+	}
+	.input:first-child
+	{
+		margin-top:30px;
+	}
+	#uzupełnij_guzik
+	{
+		float:right;
+		width:150px;
+		height:50px;
+		border-radius:10px;
+		font-size:20px;
+		border:solid black 2px;
+		transition:300ms;
+		margin-top:25px;
+		color:#dddddd;
+		margin-right:25px;
+		background-image:url("tlo1.png");
+	}
+	#uzupełnij_guzik:hover
+	{
+		letter-spacing:5px;
+	}
+	#guzik
+	{
+		margin-left:50px;
+		margin-right:50px;
+		width:200px;
+		height:100px;
+		margin-top:100px;
+		border-radius:10px;
+		font-size:25px;
+		border:solid black 2px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		transition:400ms;
+	}
+	#guzik:hover
+	{
+		letter-spacing:7px;
+	}
+	#test
+	{
+		width:500px;
+		height:200px;
+		position:absolute;
+		top:0;
+		left:200px;
+		background:red;
+		display:none;
+	}
+}
+@media (max-width: 700px)
+{
+	#kontener
+	{
+		width:300px;
+		height:1200px;
+		margin-top:30px;
+	}
+	.szachownica
+	{
+		width:300px;
+		height:300px;
+		float:left;
+	}
+	.grafika_napoju
+	{
+		width:100px;
+		height:200px;
+		margin-top:50px;
+		margin-bottom:50px;
+		border-radius:15px;
+	}
+	img
+	{
+		border-radius:15px;
+	}
+	.stan_produktu
+	{
+		border:solid black 2px;
+		float:right;
+		width:150px;
+		height:50px;
+		margin-right:25px;
+		background-image:url("tlo1.png");
+		margin-top:50px;
+		color:#dddddd;
+		line-height:80px;
+		font-size:25px;
+		border-radius:10px;
+	}
+	.input
+	{
+		float:right;
+		width:150px;
+		height:50px;
+		margin-right:25px;
+		border-radius:10px;
+		font-size:20px;
+		margin-top:20px;
+		border:solid black 2px;
+		transition:300ms;
+	}
+	.input:first-child
+	{
+		margin-top:30px;
+	}
+	#uzupełnij_guzik
+	{
+		float:right;
+		width:150px;
+		height:50px;
+		border-radius:10px;
+		font-size:20px;
+		border:solid black 2px;
+		transition:300ms;
+		margin-top:25px;
+		color:#dddddd;
+		margin-right:25px;
+		background-image:url("tlo1.png");
+	}
+	#uzupełnij_guzik:hover
+	{
+		letter-spacing:5px;
+	}
+	#guzik
+	{
+		margin-left:50px;
+		margin-right:50px;
+		width:200px;
+		height:100px;
+		margin-top:100px;
+		border-radius:10px;
+		font-size:25px;
+		border:solid black 2px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		transition:400ms;
+	}
+	#guzik:hover
+	{
+		letter-spacing:7px;
+	}
+	#test
+	{
+		width:500px;
+		height:200px;
+		position:absolute;
+		top:0;
+		left:200px;
+		background:red;
+		display:none;
+	}
+}
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+	
+		<head>
+		
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" type="text/css" href="logowanie.css" />
+				<script src="jq3.1.1.js"></script>
+				<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+				<script src="logowanie.js"></script>
+		
+		</head>
+		
+		<body>
+		
+
+				<div id="ekran_logowania">
+
+						<div id="grafika_ekranu_logowania">
+						
+								<b>Pomoc Techniczna</b>
+							
+						</div>
+
+						<form id="logowanie" action="login.php" method="post">
+
+								<input type="text" name="user" placeholder=" login"onfocus="this.placeholder=''" onblur="this.placeholder=' login'" class="input" ><br />
+
+								<input type="password" name="pass" placeholder=" hasło"onfocus="this.placeholder=''" onblur="this.placeholder=' hasło'" class="input"><br />
+
+								<input type="submit" value="Zaloguj" id="zaloguj_guzik">
+
+						</form>
+						
+						<div id="rejestracja" onclick="pokaz_panel_rej()">Zarejestruj się
+						</div>
+						
+				</div>
+				
+				<div id="tlo_rejestracji" onclick="ukryj_panel_rej()">
+				</div>
+				
+				
+				
+						<div id="panel_rejestracji">
+						
+								<form id="rejestr" action="" method="post">
+
+										<input type="text" placeholder=" Podaj nazwę użytkownika" onfocus="this.placeholder=''" onblur="this.placeholder=' Podaj nazwę użytkownika'" class="input_r" id="input1">
+										<div class="linia" id="linia1"></div>
+										<input type="text" placeholder=" Podaj hasło użytkownika" onfocus="this.placeholder=''" onblur="this.placeholder=' Podaj hasło użytkownika'" class="input_r" id="input2">
+										<div class="linia" id="linia2"></div>
+										<input type="text" placeholder=" Podaj e-mail użytkownika" onfocus="this.placeholder=''" onblur="this.placeholder=' Podaj e-mail użytkownika'" class="input_r" id="input3">
+										<div class="linia" id="linia3"></div>
+										<input type="submit" value="Zarejestruj się" id="rej_guzik">
+											
+								</form>
+							
+						
+				
+				</div>
+			
+		</body>
+	
+</html>

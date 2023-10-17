@@ -1,0 +1,711 @@
+body
+{
+	padding:0;
+	margin:0;
+	background-image:url("qw.png");
+}
+#ekran_logowania
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+#grafika_ekranu_logowania
+{
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url("tlo1.png");
+}
+.input:hover
+{
+	cursor:pointer;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	transition:100ms;
+}
+.input:focus
+{
+	cursor:pointer;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	transition:100ms;
+	text-decoration:none;
+}
+#zaloguj_guzik,#rejestracja
+{
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url("tlo1.png");
+	color:#dddddd;
+}
+#tlo_rejestracji
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:black;
+	opacity:0.7;
+	display:none;
+}
+#kontener_rejestracji
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	display:none;
+}
+#panel_rejestracji
+{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	display:none;
+	text-align:center;
+	background-image:url("qw.png");
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+.input_r:hover
+{
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	cursor:pointer;
+}
+.input_r:focus
+{
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+#rej_guzik:hover
+{
+	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	cursor:pointer;
+}
+@media (min-width: 1100px) 
+{
+	#ekran_logowania
+	{
+		width:1000px;
+		height:600px;
+		border-radius:30px;
+		margin-top:100px;
+		text-align:center;
+	}
+	#grafika_ekranu_logowania
+	{
+		margin-top:50px;
+		width:500px;
+		height:120px;
+		border-radius:25px;
+		color:white;
+		text-align:center;
+		font-size:45px;
+		line-height:120px;
+		letter-spacing:4px;
+	}
+	.input
+	{
+		width:500px;
+		height:60px;
+		margin-top:50px;
+		border-radius:10px;
+		font-size:35px;
+		border:solid black 2px;
+		transition:100ms;
+		clear:both;
+	}
+	.input:first-child
+	{
+		margin-top:50px;
+	}
+	#zaloguj_guzik,#rejestracja
+	{
+		width:500px;
+		height:90px;
+		margin-top:40px;
+		line-height:90px;
+		border-radius:10px;
+		font-size:60px;
+		letter-spacing:2px;
+		transition:400ms;
+		letter-spacing:3px;
+		border:solid black 2px;
+	}
+	#zaloguj_guzik:hover,#rejestracja:hover
+	{
+		letter-spacing:7px;
+		cursor:pointer;
+		color:white;
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	}
+	#zaloguj_guzik:focus
+	{
+		letter-spacing:7px;
+		transition:400ms;
+		cursor:pointer;
+		color:white;
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	}
+	#panel_rejestracji
+	{
+		width:800px;
+		height:600px;
+		margin-top:-590px;
+		border-radius:30px;
+	}
+	.input_r:first-child
+	{
+		margin-top:90px;
+	}
+	.input_r
+	{
+		width:500px;
+		height:60px;
+		font-size:40px;
+		margin-top:50px;
+		margin-bottom:0px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:200ms;
+	}
+	.linia
+	{
+		width:0px;
+		margin-left:156px;
+		height:5px;
+		background:red;
+		transition:400ms;
+		border-bottom-left-radius:35px;
+		border-bottom-right-radius:35px;
+	}
+	#input1:hover + #linia1, #input1:focus + #linia1
+	{
+		width:488px;
+	}
+	#input2:hover + #linia2, #input2:focus + #linia2
+	{
+		width:488px;
+	}
+	#input3:hover + #linia3, #input3:focus + #linia3
+	{
+		width:488px;
+	}
+	#rej_guzik
+	{
+		width:500px;
+		height:60px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		line-height:60px;
+		font-size:40px;
+		margin-top:30px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:400ms;
+	}
+	#rej_guzik:hover
+	{
+		letter-spacing:3px;
+		color:#ffffff;
+		transition:400ms;
+	}
+}
+@media (max-width: 1100px) and (min-width: 1000px)
+{
+	#ekran_logowania
+	{
+		width:900px;
+		height:600px;
+		border-radius:30px;
+		margin-top:100px;
+		text-align:center;
+	}
+	#grafika_ekranu_logowania
+	{
+		margin-top:50px;
+		width:470px;
+		height:120px;
+		border-radius:25px;
+		color:white;
+		text-align:center;
+		font-size:40px;
+		line-height:120px;
+		letter-spacing:4px;
+	}
+	.input
+	{
+		width:470px;
+		height:60px;
+		margin-top:50px;
+		border-radius:10px;
+		font-size:35px;
+		border:solid black 2px;
+		transition:100ms;
+		clear:both;
+	}
+	.input:first-child
+	{
+		margin-top:50px;
+	}
+	#zaloguj_guzik,#rejestracja
+	{
+		width:470px;
+		height:90px;
+		margin-top:40px;
+		line-height:90px;
+		border-radius:10px;
+		font-size:60px;
+		letter-spacing:2px;
+		transition:400ms;
+		letter-spacing:3px;
+		border:solid black 2px;
+	}
+	#zaloguj_guzik:hover,#rejestracja:hover
+	{
+		letter-spacing:7px;
+		transition:400ms;
+		cursor:pointer;
+		color:white;
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	}
+	#panel_rejestracji
+	{
+		width:800px;
+		height:600px;
+		margin-top:-630px;
+		border-radius:30px;
+	}
+	.input_r:first-child
+	{
+		margin-top:90px;
+	}
+	.input_r
+	{
+		width:500px;
+		height:60px;
+		font-size:40px;
+		margin-top:50px;
+		margin-bottom:0px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:200ms;
+	}
+	.linia
+	{
+		width:0px;
+		margin-left:156px;
+		height:5px;
+		background:red;
+		transition:400ms;
+		border-bottom-left-radius:35px;
+		border-bottom-right-radius:35px;
+	}
+	#input1:hover + #linia1, #input1:focus + #linia1
+	{
+		width:488px;
+	}
+	#input2:hover + #linia2, #input2:focus + #linia2
+	{
+		width:488px;
+	}
+	#input3:hover + #linia3, #input3:focus + #linia3
+	{
+		width:488px;
+	}
+	#rej_guzik
+	{
+		width:500px;
+		height:60px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		line-height:60px;
+		font-size:40px;
+		margin-top:30px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:400ms;
+	}
+	#rej_guzik:hover
+	{
+		letter-spacing:3px;
+		color:#ffffff;
+		transition:400ms;
+	}
+}
+@media (max-width: 1000px) and (min-width: 800px)
+{
+	#ekran_logowania
+	{
+		width:800px;
+		height:550px;
+		border-radius:30px;
+		margin-top:60px;
+		text-align:center;
+	}
+	#grafika_ekranu_logowania
+	{
+		margin-top:40px;
+		width:400px;
+		height:100px;
+		border-radius:25px;
+		color:white;
+		text-align:center;
+		font-size:35px;
+		line-height:100px;
+		letter-spacing:4px;
+	}
+	.input
+	{
+		width:400px;
+		height:50px;
+		margin-top:40px;
+		border-radius:10px;
+		font-size:30px;
+		border:solid black 2px;
+		transition:100ms;
+		clear:both;
+	}
+	.input:first-child
+	{
+		margin-top:35px;
+	}
+	#zaloguj_guzik,#rejestracja
+	{
+		width:400px;
+		height:75px;
+		margin-top:30px;
+		line-height:75px;
+		border-radius:10px;
+		font-size:40px;
+		letter-spacing:2px;
+		transition:400ms;
+		letter-spacing:3px;
+		border:solid black 2px;
+	}
+	#zaloguj_guzik:hover,#rejestracja:hover
+	{
+		letter-spacing:7px;
+		transition:400ms;
+		cursor:pointer;
+		color:white;
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	}
+	#panel_rejestracji
+	{
+		width:600px;
+		height:450px;
+		margin-top:-550px;
+		border-radius:25px;
+	}
+	.input_r:first-child
+	{
+		margin-top:40px;
+	}
+	.input_r
+	{
+		width:350px;
+		height:50px;
+		font-size:25px;
+		margin-top:40px;
+		margin-bottom:0px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:200ms;
+	}
+	.linia
+	{
+		width:0px;
+		margin-left:131px;
+		height:4px;
+		background:red;
+		transition:400ms;
+		border-bottom-left-radius:45px;
+		border-bottom-right-radius:45px;
+	}
+	#input1:hover + #linia1, #input1:focus + #linia1
+	{
+		width:338px;
+	}
+	#input2:hover + #linia2, #input2:focus + #linia2
+	{
+		width:338px;
+	}
+	#input3:hover + #linia3, #input3:focus + #linia3
+	{
+		width:338px;
+	}
+	#rej_guzik
+	{
+		width:350px;
+		height:50px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		line-height:50px;
+		font-size:30px;
+		margin-top:30px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:400ms;
+	}
+	#rej_guzik:hover
+	{
+		letter-spacing:3px;
+		color:#ffffff;
+		transition:400ms;
+	}
+}
+@media (max-width: 800px) and (min-width: 500px)
+{
+	#ekran_logowania
+	{
+		width:500px;
+		height:550px;
+		border-radius:30px;
+		margin-top:60px;
+		text-align:center;
+	}
+	#grafika_ekranu_logowania
+	{
+		margin-top:20px;
+		width:250px;
+		height:60px;
+		border-radius:10px;
+		color:white;
+		text-align:center;
+		font-size:20px;
+		line-height:60px;
+		letter-spacing:3px;
+	}
+	.input
+	{
+		width:250px;
+		height:35px;
+		margin-top:20px;
+		border-radius:10px;
+		font-size:20px;
+		border:solid black 2px;
+		transition:100ms;
+		clear:both;
+	}
+	.input:first-child
+	{
+		margin-top:25px;
+	}
+	#zaloguj_guzik,#rejestracja
+	{
+		width:250px;
+		height:55px;
+		margin-top:25px;
+		line-height:55px;
+		border-radius:10px;
+		font-size:22px;
+		transition:400ms;
+		letter-spacing:3px;
+		border:solid black 2px;
+	}
+	#zaloguj_guzik:hover,#rejestracja:hover
+	{
+		letter-spacing:7px;
+		transition:400ms;
+		cursor:pointer;
+		color:white;
+		-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+	}
+	#panel_rejestracji
+	{
+		width:450px;
+		height:300px;
+		margin-top:-520px;
+		border-radius:20px;
+	}
+	.input_r:first-child
+	{
+		margin-top:20px;
+	}
+	.input_r
+	{
+		width:250px;
+		height:40px;
+		font-size:20px;
+		margin-top:20px;
+		margin-bottom:0px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:200ms;
+	}
+	.linia
+	{
+		width:0px;
+		margin-left:105px;
+		height:3px;
+		background:red;
+		transition:400ms;
+		border-bottom-left-radius:45px;
+		border-bottom-right-radius:45px;
+	}
+	#input1:hover + #linia1, #input1:focus + #linia1
+	{
+		width:240px;
+	}
+	#input2:hover + #linia2, #input2:focus + #linia2
+	{
+		width:240px;
+	}
+	#input3:hover + #linia3, #input3:focus + #linia3
+	{
+		width:240px;
+	}
+	#rej_guzik
+	{
+		width:250px;
+		height:40px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		line-height:40px;
+		font-size:20px;
+		margin-top:30px;
+		border:2px solid black;
+		border-radius:10px;
+		transition:400ms;
+	}
+	#rej_guzik:hover
+	{
+		letter-spacing:3px;
+		color:#ffffff;
+		transition:400ms;
+	}
+}
+@media (max-width: 500px)
+{
+	#ekran_logowania
+	{
+		width:300px;
+		margin-top:30px;
+		text-align:center;
+	}
+	#grafika_ekranu_logowania
+	{
+		margin-top:5px;
+		width:200px;
+		height:40px;
+		border-radius:5px;
+		color:white;
+		text-align:center;
+		font-size:17px;
+		line-height:40px;
+	}
+	.input
+	{
+		width:200px;
+		height:30px;
+		margin-top:15px;
+		border-radius:5px;
+		font-size:17px;
+		border:solid black 2px;
+		transition:100ms;
+		clear:both;
+	}
+	#zaloguj_guzik,#rejestracja
+	{
+		width:200px;
+		height:30px;
+		line-height:30px;
+		border-radius:5px;
+		font-size:17px;
+		transition:400ms;
+		border:solid black 2px;
+		margin-top:10px;
+	}
+	#zaloguj_guzik:hover,#rejestracja:hover
+	{
+		letter-spacing:3px;
+		transition:400ms;
+		cursor:pointer;
+		color:white;
+		-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	}
+	#panel_rejestracji
+	{
+		width:300px;
+		height:250px;
+		margin-top:-220px;
+		border-radius:10px;
+	}
+	.input_r:first-child
+	{
+		margin-top:15px;
+	}
+	.input_r
+	{
+		width:150px;
+		height:30px;
+		font-size:12px;
+		margin-top:15px;
+		margin-bottom:0px;
+		border:2px solid black;
+		border-radius:6px;
+		transition:200ms;
+	}
+	.linia
+	{
+		width:0px;
+		margin-left:80px;
+		height:2px;
+		background:red;
+		transition:400ms;
+		border-radius:5px;
+	}
+	#input1:hover + #linia1, #input1:focus + #linia1
+	{
+		width:140px;
+	}
+	#input2:hover + #linia2, #input2:focus + #linia2
+	{
+		width:140px;
+	}
+	#input3:hover + #linia3, #input3:focus + #linia3
+	{
+		width:140px;
+	}
+	#rej_guzik
+	{
+		width:150px;
+		height:30px;
+		color:#dddddd;
+		background-image:url("tlo1.png");
+		line-height:30px;
+		font-size:15px;
+		margin-top:20px;
+		border:2px solid black;
+		border-radius:8px;
+		transition:400ms;
+	}
+	#rej_guzik:hover
+	{
+		letter-spacing:1px;
+		color:#ffffff;
+		transition:400ms;
+	}
+}
